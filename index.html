@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rodjen's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <p href="#" class="logo">Rodjen</p>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="menu-icon"></div>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hi, I'm Rodjen Labadan</h1>
+            <h3>BSIT Student</h3>
+            <p>Welcome to my Portfolio. Feel free to explore my portfolio and learn more about my skills, projects, and accomplishments. Let's connect and create something amazing together!</p>
+            <div class="btn-group">
+                <a href="https://www.facebook.com/rodjen.labadan.7" target="_blank" class="btn">Facebook</a>
+                <a href="https://www.instagram.com/rodjen01/?next=%2F" target="_blank" class="btn">Instagram</a>
+            </div>
+        </div>
+        <div class="home-image">
+            <img src="images/rodjen.jpg" alt="Rodjen's Picture">
+        </div>
+    </section>
+
+    <section class="about hidden" id="about">
+        <h2>About <span>Me</span></h2>
+        <p>Hello, I am Rodjen Labadan, a 19-year-old BSIT student currently pursuing my degree at Cavite State University - Silang Campus. My passion for computers started when I was young and has grown stronger over the years.</p>
+        <p>I am a proud graduate of Philippine Christian University, where I majored in Computer System Servicing (CSS) during my senior high school. My dedication and skills in the field have earned me the title of Best in CSS, which demonstrates my technical expertise and commitment to excellence.</p>
+        <p>Now, as a student of CvSU College, I continue to expand my knowledge of information technology, building on the foundation I developed in high school. I am particularly skilled in computer troubleshooting, system maintenance, and network configuration, which I hope to further refine as I strive to become a professional in the IT industry and further expand my knowledge of programming.</p>
+        <p>I enjoy exploring new technologies, solving technical problems, and constantly learning to stay ahead of the rapidly evolving world of technology.</p>
+    </section>
+
+    <section class="skills hidden" id="skills">
+        <h2>My <span>Skills</span></h2>
+        <p>Here are some skills I have mastered:</p>
+        <ul>
+            <li>Problem Solving</li>
+            <li>Team Collaboration</li>
+            <li>HTML, CSS, JavaScript ,C++</li>
+            <li>Attention to detail and problem-solving ability</li>
+            <li>End-user support for hardware, software, and network-related issues</li>
+            <li>Proficiency in Windows 10, Office 365, and IT troubleshooting</li>
+            <li>Expertise in basic network troubleshooting (LAN, Wi-Fi, switches, access points)</li>
+            <li>Software Installation and Configuration</li>
+            <li>Network Setup and Maintenance</li>
+            <li>System Diagnostics</li>
+            <li>Preventive Maintenance in computers</li>
+            <li>System Assembly and Upgrading</li>
+            <li>Assembling Computers</li>
+        </ul>
+    </section>
+
+    <section class="projects hidden" id="projects">
+        <h2>My <span>Projects</span></h2>
+        <p>Take a look at some of my recent projects:</p>
+        <div class="project-gallery">
+            <div class="project-item" data-id="1">
+                <h3>Project 1</h3>
+                <p>C++ Project.</p>
+                <button class="btn view-project">View Project</button>
+            </div>
+            <div class="project-item" data-id="2">
+                <h3>Project 2</h3>
+                <p>SNHS Project case.</p>
+                <button class="btn view-project">View Project</button>
+            </div>
+            <div class="project-item" data-id="3">
+                <h3>Project 3</h3>
+                <p>My Project DCIT-21.</p>
+                <button class="btn view-project">View Project</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-details hidden" id="project-details">
+        <h2>Project Details</h2>
+        <div class="details-content">
+            <div id="project-images-container"></div>
+            <p id="project-description">Description will appear here.</p>
+        </div>
+        <button class="btn" id="back-to-projects">Back to Projects</button>
+    </section>
+
+    <section class="contact hidden" id="contact">
+        <h2>Contact <span>Me</span></h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <p><strong>Email:</strong> rodjenlabadan01@gmail.com</p>
+                <p><strong>Phone:</strong> +63 9948 257 889</p>
+                <p><strong>Address:</strong> Salawag, Dasmariñas City, Cavite, Philippines</p>
+            </div>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Rodjen. All Rights Reserved.</p>
+    </footer>
+
+    <div id="lightbox" class="hidden">
+        <div class="lightbox-content">
+            <span id="close-lightbox">&times;</span>
+            <img id="lightbox-image" src="" alt="Project Image">
+        </div>
+    </div>
+</body>
+</html>
