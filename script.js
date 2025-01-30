@@ -93,16 +93,14 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
-    closeLightbox.addEventListener("click", () => {
+ closeLightbox.addEventListener("click", () => {
         lightbox.classList.add("hidden");
-        lightboxImage.src = "";  
     });
 
-   
     lightbox.addEventListener("click", (event) => {
         if (event.target === lightbox) {
             lightbox.classList.add("hidden");
-            lightboxImage.src = "";
         }
     });
 });
+
